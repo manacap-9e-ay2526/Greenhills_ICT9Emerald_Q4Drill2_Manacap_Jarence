@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Drill 2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- styles.css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- MAIN CONTAINER -->
+<main class="container mt-5">
+
+  <div class="row justify-content-center">
+    <div class="col-md-2-">
+
+      <div class="p-4 shadow bg-white rounded">
+
+        <div class="row align-items-center">
+
+          <div class="col-md-8">
+
+            <h1 class="text-center mb-2">Heat Index Checker</h1>
+
+            <!-- Toggle Feature -->
+            <details ontoggle="alert('Input the temperature (°C) and humidity (%). Then click Check to see the heat index and its status')">
+              <summary class="btn btn-sm btn-outline-secondary mb-3">Note</summary>
+            </details>
+
+            <!-- FORM -->
+            <form onsubmit="return false;">
+
+              <div class="mb-3">
+                <label class="form-label">Degrees in °C</label>
+                <input type="text" id="temperature" class="form-control" placeholder="Enter temperature">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Humidity in %</label>
+                <input type="text" id="humidity" class="form-control" placeholder="Enter humidity">
+              </div>  
+
+              <div class="d-flex gap-2">
+                <button type="button" class="btn btn-primary w-100" onclick="checkHeatIndex()">Check</button>
+                <button type="reset" class="btn btn-secondary w-100" onclick="clearResult()">Cancel</button>
+              </div>
+
+            </form>
+
+          </div>
+
+          <!-- RIGHT: IMAGE -->
+          <div class="col-md-3 text-end">
+            <img src="Heat.png" class="img-fluid" style="max-width: 280px;" alt="Heat Image">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- ONLINE SOURCES -->
+<p>Online Sources</p>
+
+<a href="https://storage.googleapis.com/oa_disk001/obgreenhills/65/classfeed/3404/1775780919-3518.pdf" class="btn btn-link">Conditional Statements</a>
+<a href="https://docs.google.com/document/d/1-193k1XrxhMBu7vsB2Oom-Gt01--l0fKDZjQB7_8mbI/edit?tab=t.0" class="btn btn-link">Window.alert</a>
+<a href="https://storage.googleapis.com/oa_disk001/obgreenhills/65/classfeed/3404/1775780920-618.pdf" class="btn btn-link">Switch Statement</a>
+<a href="https://www.w3schools.com/Jsref/prop_text_value.asp" class="btn btn-link">.value</a>
+
+<!-- main.js -->
+<script src="main.js"></script>
+
+</body>
+</html>
